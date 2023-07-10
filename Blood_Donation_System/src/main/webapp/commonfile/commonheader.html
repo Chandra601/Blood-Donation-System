@@ -1,0 +1,109 @@
+<style>
+.nav-link {
+	color: white !important;
+	/* It is used override the default attribute value */
+	font-size: 20px;
+	font-family: Bookman Old Style;
+}
+
+a:hover {
+	color:black !important;
+	font-size: 24px;
+}
+
+/* this is for dropdown */
+.dropdown-item {
+	font-size: 20px;
+	font-family: Bookman Old Style;
+}
+
+.brand-name {
+	color: white;
+	font-size: 20px;
+}
+
+.brand-name::first-letter {
+	font-size: 30px;
+	color:  #4d0000;
+}
+
+i {
+	font-size: 24px;
+	margin-right: 4px;
+}
+.special-color{
+	background-color:  #e60000;
+}
+.nav-item{
+	margin: 0 12px;
+}
+</style>
+
+
+
+<nav class="navbar navbar-expand-lg special-color">
+	<div class="container-fluid">
+		<a class="navbar-brand brand-name"
+			href="/Blood_Donation_System/jsp/index.jsp">BloodCenter</a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+			data-bs-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false"
+			aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav me-auto mb-lg-0">
+				<li class="nav-item"><a class="nav-link active"
+					aria-current="page" href="/Blood_Donation_System/jsp/index.jsp"><i
+						class="fa-sharp fa-solid fa-house"></i>Home</a></li>
+				<li class="nav-item"><a class="nav-link"
+					href="/Blood_Donation_System/jsp/contactus.jsp"><i
+						class="fas fa-headset"></i>ContactUs</a></li>
+
+				<li class="nav-item"><a class="nav-link"
+					href="/Blood_Donation_System/jsp/aboutus.jsp"><i
+						class="fas fa-users"></i>AboutUs</a></li>
+
+				<li class="nav-item"><a class="nav-link"
+					href="/Blood_Donation_System/jsp/feedback.jsp"><i
+						class="fa-sharp fa-solid fa-comments"></i>Feedback</a></li>
+
+				<!-- Example single danger button -->
+				<li class="nav-item dropdown"><a
+					class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+					role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						<i class="fa-sharp fa-solid fa-right-to-bracket"></i>Login
+				</a>
+					<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<li><a class="dropdown-item"
+							href="/Blood_Donation_System/jsp/login.jsp">Donor Login</a></li>
+						<li><a class="dropdown-item"
+							href="/Blood_Donation_System/patient/patient_login.jsp">Patient Login</a></li>
+					</ul></li>
+
+				<!-- Example single danger button -->
+				<li class="nav-item dropdown"><a
+					class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+					role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						<i class="fas fa-file-alt"></i>Registration
+				</a>
+					<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<li><a class="dropdown-item"
+							href="/Blood_Donation_System/donar/registration.jsp">Donor
+								Registration</a></li>
+						<li><a class="dropdown-item"
+							href="/Blood_Donation_System/patient/patient_registration.jsp">Patient
+								Registration</a></li>
+					</ul></li>
+				<li class="nav-item"><a class="nav-link"
+					href="/Blood_Donation_System/jsp/bloodgroup.jsp"><i
+						class="fa-sharp fa-solid fa-circle-info"></i>More Information</a></li>
+
+				<li class="nav-item"><a class="nav-link"
+					href="/Blood_Donation_System/doctor/doctorlogin.jsp"><i
+						class="fa-solid fa-user"></i> Doctor Login</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<!-- navbar closed -->
